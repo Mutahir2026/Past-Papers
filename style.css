@@ -51,7 +51,34 @@ i[class^="ri-"] {
     padding: 1%;
     background-color: rgb(120, 6, 120);
 }
+.scrollbar::-webkit-scrollbar
+{
+width: 10px;
+background-color: #2E1A30;
 
+}
+.scrollbar::-webkit-scrollbar-track
+{
+    background: whitesmoke;
+}
+.scrollbar::-webkit-scrollbar-thumb
+{
+background: #2E1A30;
+cursor: pointer;
+border-radius: 25px;
+}
+.scrollbar
+{
+    width: 300px;
+    max-height: 200px;      /* is height ke baad scroll shuru hoga */
+    overflow-y: auto;    
+}
+.course
+{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
 #login:hover {
     color: grey;
     cursor: pointer;
@@ -143,20 +170,18 @@ i[class^="ri-"] {
 
 #courseopt {
     background-color: blue;
-    width: 24%;
-    border-radius: 20px;
-    margin-left: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 13%;
+    /* border-radius: 20px; */
+    margin-left: 20%;
+   
 }
 
 #yearopt {
     background-color: brown;
-    width: 0.5%;
-    padding: 7%;
-    border-radius: 20px;
-    margin-left: 12%;
+     background-color: blue;
+    width: 13%;
+    /* border-radius: 20px; */
+    margin-left: 13%;
 }
 
 .ss {
